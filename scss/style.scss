@@ -87,7 +87,9 @@ header {
 // main
 
 main {
-    margin: 0 140px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .slide {
@@ -99,6 +101,7 @@ main {
     img {
         width: 100%;
         border-radius: 14px;
+        min-width: 30%;
     }
 
     .slide-text {
@@ -119,16 +122,9 @@ main {
     line-height: 24px;
 }
 
-.row {
-    margin-top: 70px;
-    display: flex;
-    gap: 200px;
-    margin-bottom: 100px;
-}
-
 .aside1 {
-    margin-top: 20px;
-    width: 60vw;
+    width: 100%;
+    max-width: 600px;
 
     h2 {
         padding-bottom: 20px;
@@ -155,11 +151,9 @@ main {
 }
 
 .mobile-s {
-    align-items: center;
-    gap: 20px;
-
     img {
-        width: 80%;
+        width: 100%;
+        max-width: 400px;
     }
 }
 
@@ -189,16 +183,18 @@ main {
 
 .cards {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 26em;
-    height: 530px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
 }
 
 .column2 {
@@ -224,13 +220,13 @@ footer {
         gap: 4em;
     }
 
-    img {
-        width: 30px;
-    }
-
     .rigth {
         display: flex;
         align-items: center;
+
+        img {
+            width: 30px;
+        }
     }
 }
 
@@ -254,6 +250,7 @@ footer {
     }
 
     img {
+        width: 100%;
         border-radius: 20px;
     }
 }
@@ -268,6 +265,7 @@ footer {
     }
 
     img {
+        width: 100%;
         border-radius: 20px 20px 0 0;
     }
 }
@@ -321,12 +319,16 @@ footer {
 
 
 .row {
-    align-items: center;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    // flex-wrap: wrap;
+    margin: 70px 0;
 
     .cards3 {
         display: flex;
         justify-content: center;
-        gap: 80px;
+        gap: 200px;
         max-width: 800px;
         margin: 0 auto;
 
@@ -347,8 +349,9 @@ footer {
 }
 
 .w1-15 {
-    margin: 0 140px;
-
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 // mobileMcd
@@ -359,41 +362,48 @@ footer {
 
 .m-width {
     text-align: left;
+
     img {
+        width: 100%;
         border-radius: 0;
     }
 }
 
 .Cherg {
-    margin: 0 140px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
     text-align: left;
+
     h2 {
         margin: 20px 0;
     }
-    p{ 
+
+    p {
         font-size: 18px;
     }
+
     button {
         margin: 10px 0;
         @include buttonn;
     }
 }
 
-.row {
-    .cards3 {gap: 200px;}
-}
 .cards4 {
     display: flex;
-    justify-content: space-between;
-    gap: 200px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+
     .card {
-        height: 500px;
+        height: auto;
+
         img {
-            width: 31em;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
         }
     }
-
-    margin: none;
 }
 
 .row3 {
@@ -404,9 +414,12 @@ footer {
     font-size: 17px;
     margin: 0 130px;
     text-align: left;
-    ul{
-        margin-left: 30px;
+
+    ul {
+        padding-left: 20px;
+
         li {
+            margin-bottom: 10px;
             font-size: 18px;
         }
     }
@@ -414,13 +427,150 @@ footer {
 
 .btnss {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
     button {
         @include buttonn;
     }
+
     margin: 70px 0;
 }
 
 .zakaz {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+// adapt website
+
+// for tablet
+@media (max-width: 1024px) {
+
+    .headd {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .choose {
+        padding-right: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside1 {
+        max-width: 100%;
+        text-align: center;
+
+        h2 {
+            width: 100%;
+            font-size: 32px;
+        }
+    }
+
+    .cards {
+        gap: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+// for phone
+
+@media (max-width: 768px) {
+
+    .slide {
+        flex-direction: column;
+
+        .slide-text {
+            position: static;
+            width: 100%;
+            height: auto;
+            margin-top: 12px;
+            left: auto;
+            bottom: auto;
+        }
+    }
+
+    .hero-h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .under-text {
+        margin: 0 20px;
+    }
+
+    .btnss {
+        flex-direction: column;
+    }
+}
+
+// for s,all phone
+
+@media (max-width: 480px) {
+
+    main {
+        padding: 0 10px;
+    }
+
+    .headd {
+        gap: 10px;
+    }
+
+    .choose {
+        a {
+            font-size: 14px;
+        }
+
+    }
+
+    .aside1 {
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .aside1 {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .hero-h1 {
+        font-size: 26px;
+    }
+
 }
