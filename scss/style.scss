@@ -579,7 +579,7 @@ img {
 
 .maine {
     display: flex;
-    flex: 1;
+    
 }
 
 .aside1-findus {
@@ -700,4 +700,8 @@ img {
     margin: 16px;
     font-size: 17px;
     color: #6d6d6d;
+}
+
+body {
+    height: 100%;
 }

@@ -687,9 +687,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .aside1-findus {
@@ -848,5 +845,9 @@ img {
   margin: 16px;
   font-size: 17px;
   color: #6d6d6d;
+}
+
+body {
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
