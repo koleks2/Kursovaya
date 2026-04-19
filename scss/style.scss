@@ -574,3 +574,130 @@ img {
     }
 
 }
+
+// find us 
+
+.maine {
+    display: flex;
+    flex: 1;
+}
+
+.aside1-findus {
+    width: 380px;
+    height: auto;
+
+    .bg-yell {
+        background-color: #ffbc0d;
+
+        .find-input {
+            box-shadow: 0 0 10px 0 rgba(175, 175, 175, 0.404);
+            font-family: sans-serif;
+            margin: 20px;
+            padding: 15px 30px;
+            border-radius: 20px;
+            border: none;
+            width: 340px;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .find-input::placeholder {
+            color: #bdbdbd;
+        }
+
+        .Searchimg {
+            position: absolute;
+            top: 225px;
+            left: 15px;
+        }
+    }
+
+    .find-btn {
+        margin: 10px;
+        text-align: center;
+        gap: 14px;
+        padding: 10px;
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: #b10000;
+            }
+        }
+    }
+}
+
+.aside2-findus {
+    width: 380px;
+
+    .choose-rest {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.chose {
+    margin: 18px 0;
+
+    .filters {
+        display: flex;
+        font-size: 10px;
+        font-weight: 700;
+        border: 2px solid #FFBC0D;
+        justify-content: center;
+        text-align: center;
+        border-radius: 4px;
+        padding: 4px 10px;
+        cursor: pointer;
+    }
+
+    display: flex;
+}
+
+.checkbox-div {
+    display: flex;
+    padding: 0 24px;
+    justify-content: space-between;
+
+    span {
+        margin: 14px;
+        display: flex;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+    input {
+        margin-right: 5px;
+        width: 20px;
+    }
+}
+
+.rowmac {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .mac-card {
+        font-size: 13px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+.near {
+    margin: 16px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.non-near {
+    margin: 16px;
+    font-size: 17px;
+    color: #6d6d6d;
+}
