@@ -92,8 +92,11 @@ main {
 .slide {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 10px;
   position: relative;
+}
+.slide .active {
+  border: none;
 }
 .slide img {
   width: 100%;
@@ -101,6 +104,9 @@ main {
   min-width: 30%;
 }
 .slide .slide-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   position: absolute;
   bottom: 2em;
   left: 4vw;
@@ -109,6 +115,9 @@ main {
   height: 13em;
   padding: 15px;
   border-radius: 14px;
+}
+.slide .slide-text p {
+  font-size: 14px;
 }
 
 .empty {

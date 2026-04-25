@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/mcdonalds-logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
     <title>Макдональдз</title>
 </head>
 
@@ -19,9 +25,11 @@
                 <div class="right-header">
                     <nav>
                         <ul>
-                            <li><a href="./find-us.html"><img src="./images/pngegg.png"
-                                        alt=""><span>Знайти нас</span></a></li>
-                            <li><a target="_blank" class="zakaz" href="https://glovoapp.com/en?utm_source=Social_media&utm_medium=Organic_Posts&utm_campaign=Referral_Acquisition_Facebook_All_PartnersVisibility_Ukr_UA"><button>Замовити доставку</button></a></li>
+                            <li><a href="./find-us.html"><img src="./images/pngegg.png" alt=""><span>Знайти
+                                        нас</span></a></li>
+                            <li><a target="_blank" class="zakaz"
+                                    href="https://glovoapp.com/en?utm_source=Social_media&utm_medium=Organic_Posts&utm_campaign=Referral_Acquisition_Facebook_All_PartnersVisibility_Ukr_UA"><button>Замовити
+                                        доставку</button></a></li>
                         </ul>
                     </nav>
                     <nav class="choose">
@@ -36,12 +44,46 @@
     </header>
     <main>
         <div class="slide">
-            <img src="./images/Slider_TOW.png" alt="">
-            <div class="slide-text">
-                <h2>Щось масштабне наближається!</h2>
-                <p>Хммм… Із меню МакДональдз по всьому світу зникають найпопулярніші позиції. Це випадковість чи частина
-                    якогось секретного плану? Хто за цим стоїть? І чого чекати далі? Трішки терпіння — і скоро про все
-                    дізнаєшся!</p>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/Slider_TOW.png" class="d-block w-100" alt="...">
+                        <div class="slide-text">
+                            <h2>Щось масштабне наближається!</h2>
+                            <p>Хммм… Із меню МакДональдз по всьому світу зникають найпопулярніші позиції. Це
+                                випадковість чи частина
+                                якогось секретного плану? Хто за цим стоїть? І чого чекати далі? Трішки терпіння — і
+                                скоро про все
+                                дізнаєшся!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Slider_BeefVariety.png" class="d-block w-100" alt="...">
+                        <div class="slide-text">
+                            <h2>Біф-новинки вже тут!</h2>
+                            <p>Насичений, соковитий Біф Рол, на який ви так довго чекали, і гострий Роял Халапеньйо та
+                                Бекон вже в МакДональдз! Ми знаємо, що ви сьогодні замовите!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/HM_Mario_SLIDER_feb2026.png" class="d-block w-100" alt="...">
+                        <div class="slide-text">
+                            <h2>Книга чи іграшка?</h2>
+                            <p>Пориньте разом із дітьми у пригодницький та міжгалактичний Всесвіт Маріо з новою
+                                колекцією іграшок і книг Хеппі Міл®!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div class="empty">
         <p>
@@ -97,7 +139,7 @@
                         родини!</p>
                 </div>
                 <div class="column2">
-  
+
                 </div>
             </div>
             <div class="card">
